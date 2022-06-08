@@ -1,0 +1,204 @@
+<html>
+<head>
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="emo.css" >
+	<script src=" jquery.js"></script>
+	<script src=" popper.js"></script>
+	<script src=" bootstrap.js"></script>
+	
+	<style>	
+	.row{
+	padding:3px;
+	}
+	#apo{
+	background-image:url("male-doctor.jpg");
+	background-repeat: no-repeat;
+	background-attachment:no-fixed;
+	background-size:cover;
+	}
+	</style>
+</head>
+	<body>
+		<div class="row bg-info text-white d-flex justify-content-center ">				
+			<div class="col-3">
+				Mail: apoolohealthcare@gmail.com
+			</div>
+			
+        <div class="col-6 d-flex justify-content-center p-2">
+			<div class="spinner-grow text-muted"></div>
+			<div class="spinner-grow text-primary"></div>
+			<div class="spinner-grow text-success"></div>
+			<div class="spinner-grow text-secondary"></div>
+			<div class="spinner-grow text-warning"></div>
+		</div>
+		
+		<div class="col-3 d-flex justify-content-center ">
+				Landline: 022-6356958
+			</div>
+		
+		</div>
+		
+		<div class="row bg-dark">
+			<div class="col-12 ">
+				<nav class="navbar navbar-expand-md bg-secondary navbar-dark ">
+					<a class="navbar-brand text-white font-weight-bolder">Apoolo</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="nav justify-content-center navbar-nav ml-auto">
+						
+							<li class="nav-item">
+							<a class="nav-link active" href="home.html">Home</a>
+							</li>
+							
+							<li class="nav-item">
+							<a class="nav-link" href="About us.html">About</a>
+							</li>  
+							
+							<li class="nav-item">
+							<a class="nav-link" href="department.html">Department</a>
+							</li> 
+							
+							
+							<li class="nav-item">
+							<a class="nav-link" href="doctors.html">Doctors</a>
+							</li>
+
+							<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+							</li> 
+							
+							<div class="btn-group">
+							<button type="button" class="btn btn-dark  dropdown-toggle" data-toggle="dropdown">
+							More
+							</button>
+							<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">doctor</a>
+							<a class="dropdown-item" href="#">department</a>
+							<a class="dropdown-item" href="#">doctor1</a>
+							<a class="dropdown-item" href="#">department1</a>
+							</div>
+							</div>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div id="apo" class="row">
+		<div class="container d-flex justify-content-center">
+		  <div class="col-12">
+			<h2 class="text-center">Make An Appoinment</h2>
+			<br>
+			<form action="/action_page.php" class="was-validated form-inline">
+			<div class="form-group">
+				<label for="uname" class="mr-sm-3">Username:</label>
+				<input type="text" class="form-control  mr-sm-2" id="uname" placeholder="Enter username" name="uname" required>
+				<div class="valid-feedback">Valid.</div>
+				<div class="invalid-feedback">Please fill out this field.</div>
+			</div>
+			
+			<div class="form-group">
+				<label for="email" class="mr-sm-3">Email:</label>
+				<input type="email" class="form-control  mr-sm-5" id="email" placeholder="Enter email" name="email" required>
+				<div class="valid-feedback">Valid.</div>
+				<div class="invalid-feedback">Please fill out this field.</div>
+			</div>
+			
+			<div class="form-group">
+				<label for="number" class="mr-sm-3">Phone No:</label>
+				<input type="number" class="form-control mr-sm-5" id="num" placeholder="Enter Number" name="number" required>
+				<div class="valid-feedback">Valid.</div>
+				<div class="invalid-feedback">Please fill out this field.</div>
+			</div>
+			</form>
+			
+			<form action="/action_page.php" class="was-validated form-inline ">
+			<div class="form-group">
+				<label for="date" class="mr-sm-3">Appoinment:</label>
+				<input type="date" class="form-control mr-sm-5" id="date" required>
+			</div>
+			</form>
+			
+			<div class="form-group">
+			<label for="department">Department:</label>
+			<select name="diesease" class="custom-select">
+			  <option selected> select Department</option>
+			  <option value="dernato">Dermatologists</option>
+			  <option value="cardio">Cardiologists</option>
+			  <option value="optha">Ophthalmologists</option>
+			</select>
+			</div>
+			<div class="form-group">
+			<label for="department">Visited:</label>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input">1st time
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input">Last month
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input" disabled>Last year
+				</label>
+			</div>	
+			</div>
+			<form  action="/action_page.php" class="was-validated form-inline mr-sm-3">
+			<p>File:</p>
+			<input type="file" id="myFile" class="mr-sm-4" name="filename2">
+			<br>
+			
+			<div class="form-group">
+			<label for="comment" class="mr-sm-3">Message:</label>
+			<textarea class="form-control"  id="comment" name="text"></textarea>
+			</div>
+			</form>
+			
+			<div class="form-group text-center">
+			<button type="submit" class="btn btn-primary btn-outline-white justify-content-center mr-sm-3">Submit</button>
+			</div>
+		  </div>
+		</div>
+		</div>
+		
+		<div class="container-fluid bg-dark text-white ">
+			<div class="row p-4">
+				<div class="col-md-4 col-sm-12 text-center">
+					<ul class="list-unstyled">
+						<li class="list-header" style="font-size: 1.5rem;">Timing</li>
+						<li><a href="#" class="btn text-white">Mon-Tue: 8:00am-9:00pm</a></li>
+						<li><a href="#" class="btn text-white">Wed-Fri: 7:00am-9:00pm</a></li>
+						<li><a href="#" class="btn text-white">Sat: 8:00am-11:00pm</a></li>
+						<li><a href="#" class="btn text-white">Sun: 8:00am-10:00pm</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-12 text-center">
+					<ul class="list-unstyled ">
+						<li class="list-header" style="font-size:1.5rem;">Support</li>
+						<li><a href="contact.html" class="btn text-white">Inquiry</a></li>
+						<li><a href="contact.html" class="btn text-white">Questions</a></li>
+						<li><a href="contact.html" class="btn text-white">Help</a></li>
+					</ul>
+				</div>
+		<div class=" text-center bg-dark">
+			<p>2020@All Rights Reserved
+			<br>
+			Designed And Devloped By PP!</p>
+		</div>
+		<div class="container">              
+		  <ul class="pagination justify-content-end">
+			<li class="page-item"><a class="page-link" href="home.html">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="About us.html">1</a></li>
+			<li class="page-item"><a class="page-link" href="department.html">2</a></li>
+			<li class="page-item"><a class="page-link" href="doctors.html">3</a></li>
+			<li class="page-item"><a class="page-link" href="contact.html">4</a></li>
+			<li class="page-item"><a class="page-link" href="about us.html">Next</a></li>
+		  </ul>
+		</div>
+</body>
+</html>
